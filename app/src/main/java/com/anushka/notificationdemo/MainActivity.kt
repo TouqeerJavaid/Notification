@@ -17,11 +17,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private val channelID = "com.anushka.notificationdemo.channel1"
     private var notificationManager: NotificationManager? = null
-    private val KEY_REPLY = "key_reply"
+    private val  KEY_REPLY = "key_reply"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         createNotificationChannel(channelID, "DemoChannel", "this is a demo")
